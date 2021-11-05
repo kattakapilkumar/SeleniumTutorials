@@ -1,17 +1,16 @@
 package StepDefinations;
 
-
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-
 
 public class GoogleSearchSteps {
 	
@@ -34,10 +33,13 @@ public class GoogleSearchSteps {
 	}
 
 	@Given("user is on google search page")
-	public void user_is_on_google_search_page() {
+	public void user_is_on_google_search_page() throws InterruptedException {
 		
 		driver.navigate().to("https://google.com");
-	   
+		Thread.sleep(5000);
+		String dtitle = driver.getTitle();
+		Assert.assertTrue(dtitle.contains("a"));
+		
 	}
 
 	@When("user enters a text search box")
