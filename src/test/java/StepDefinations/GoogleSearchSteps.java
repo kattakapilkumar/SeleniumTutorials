@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
+import Utility.ExtentRprt;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -15,6 +16,7 @@ import io.cucumber.java.en.When;
 public class GoogleSearchSteps {
 	
 	WebDriver driver = null;
+	ExtentRprt extentobj = null;
 	
 	@Given("browser is open")
 	public void browser_is_open() {

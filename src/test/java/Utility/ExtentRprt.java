@@ -8,7 +8,6 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 public class ExtentRprt {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		ExtentSparkReporter spark = new ExtentSparkReporter("Spark.html");
 		
