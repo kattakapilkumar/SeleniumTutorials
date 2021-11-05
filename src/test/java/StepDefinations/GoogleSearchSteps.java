@@ -17,7 +17,7 @@ public class GoogleSearchSteps {
 	
 	WebDriver driver = null;
 	ExtentRprt extentobj = new ExtentRprt();
-	
+	extentobj.te
 	@Given("browser is open")
 	public void browser_is_open() {
 	   
