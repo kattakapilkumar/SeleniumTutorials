@@ -16,7 +16,7 @@ import io.cucumber.java.en.When;
 public class GoogleSearchSteps {
 	
 	WebDriver driver = null;
-	ExtentRprt extentobj = null;
+	ExtentRprt extentobj = new ExtentRprt();
 	
 	@Given("browser is open")
 	public void browser_is_open() {
