@@ -7,19 +7,21 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 
+import Utility.BaseSetupclass;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pagefactory.LoginPage_PF;
 
-public class LoginDemoStepdefination2_PF {
+public class LoginDemoStepdefination2_PF extends BaseSetupclass {
 	
 	WebDriver driver = null;
 	
 	LoginPage_PF obj ;
 	
-	@BeforeTest
+	
 	@Given("brower is open")
 	public void brower_is_open() throws InterruptedException {
 		
@@ -37,18 +39,21 @@ public class LoginDemoStepdefination2_PF {
 	    Thread.sleep(2000);
 	}
 
+
 	@Given("user is on login page")
 	public void user_is_on_login_page() {
 		
 		driver.navigate().to("https://example.testproject.io/web/");
-	  
+		System.out.println("i am here");
 	}
 
+	
 	@When("^user enters (.*) and (.*)$")
 	public void user_enters_username_and_password(String username,String password) throws InterruptedException {
 		
 		obj = new LoginPage_PF(driver); 	
-		
+		System.out.println(username);
+		System.out.println(password);
 		obj.enterUsername(username);
 		obj.enterPassword(password);
 		obj.clickLogin();
@@ -60,6 +65,7 @@ public class LoginDemoStepdefination2_PF {
 		Thread.sleep(2000);
 
 	}
+
 
 	@Then("user is navigated")
 	public void user_is_navigated() {

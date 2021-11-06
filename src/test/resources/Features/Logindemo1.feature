@@ -9,5 +9,4 @@ Then user is navigated
 
 Examples:
 |username||password|
-|Raghav||12345|
 |kapil||12345|

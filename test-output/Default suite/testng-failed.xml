@@ -3,12 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="StepDefinations.LoginDemoStepdefination2_testNG">
+      <class name="StepDefinations.LoginDemoStepdefination2_PF">
         <methods>
+          <include name="user_is_navigated"/>
           <include name="user_enters_username_and_password"/>
-          <include name="brower_is_open"/>
+          <include name="tearDown"/>
+          <include name="SetupExtents"/>
         </methods>
-      </class> <!-- StepDefinations.LoginDemoStepdefination2_testNG -->
+      </class> <!-- StepDefinations.LoginDemoStepdefination2_PF -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
