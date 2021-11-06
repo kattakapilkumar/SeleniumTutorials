@@ -8,7 +8,11 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentReporter;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
-public class ExtentRprts {
+public class BaseSetupclass {
+	
+	public static ExtentReports extent = new ExtentReports();
+	public static ExtentSparkReporter spark = new ExtentSparkReporter("extent.html");
+	
 	
 	
 	@BeforeSuite
