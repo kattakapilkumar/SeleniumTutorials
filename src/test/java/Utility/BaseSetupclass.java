@@ -3,6 +3,7 @@ package Utility;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
@@ -18,6 +19,7 @@ public class BaseSetupclass {
 		
 	@BeforeSuite
 	@BeforeTest
+	@BeforeClass
 	public void SetupExtents() {
 		
 		extent = new ExtentReports();
@@ -30,6 +32,8 @@ public class BaseSetupclass {
 	@AfterTest
 	@AfterClass
 	public void tearDown() {
+		
+		extent.flush();
 		
 		
 	}
