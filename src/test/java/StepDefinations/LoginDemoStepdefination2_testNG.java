@@ -54,7 +54,7 @@
 //	}
 //
 //	@Test
-//	//@Parameter({"username"},{"password"})
+//	//@Parameter({"username,password"})
 //	@When("^user enters (.*) and (.*)$")
 //	public void user_enters_username_and_password(String username,String password) throws InterruptedException {
 //		

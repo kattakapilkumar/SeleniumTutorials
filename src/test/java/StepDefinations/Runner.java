@@ -3,6 +3,7 @@ package StepDefinations;
 import org.junit.runner.RunWith;
 
 import io.cucumber.junit.CucumberOptions;
+import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.junit.Cucumber;
 
 @RunWith(Cucumber.class)
@@ -16,6 +17,6 @@ import io.cucumber.junit.Cucumber;
 
 		)
 
-public class Runner {
+public class Runner extends AbstractTestNGCucumberTests{
 
 }

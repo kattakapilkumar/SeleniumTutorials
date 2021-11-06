@@ -12,11 +12,14 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentReporter;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
+import io.cucumber.java.Before;
+
 public class BaseSetupclass {
 	
 	public static ExtentReports extent;
 	public static ExtentSparkReporter htmlspark;  
 		
+//	@Before
 	@BeforeSuite
 	@BeforeTest
 	@BeforeClass
