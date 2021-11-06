@@ -18,7 +18,6 @@ import pagefactory.LoginPage_PF;
 
 public class LoginDemoStepdefination2_PF extends BaseSetupclass {
 	
-
 	WebDriver driver = null;
 	
 	LoginPage_PF obj ;
@@ -49,8 +48,8 @@ public class LoginDemoStepdefination2_PF extends BaseSetupclass {
 		System.out.println("i am here");
 	}
     
-	@Test (priority=3)
-	@Parameters({"username","password"})
+	
+//	@Parameters({"username","password"})
 	@When("^user enters (.*) and (.*)$")
 	public void user_enters_username_and_password(String username,String password) throws InterruptedException {
 		

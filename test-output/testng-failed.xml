@@ -5,7 +5,6 @@
     <classes>
       <class name="StepDefinations.LoginDemoStepdefination2_PF">
         <methods>
-          <include name="user_is_navigated"/>
           <include name="user_enters_username_and_password"/>
           <include name="tearDown"/>
           <include name="SetupExtents"/>

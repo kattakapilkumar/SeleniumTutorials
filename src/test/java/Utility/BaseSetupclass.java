@@ -22,6 +22,8 @@ public class BaseSetupclass {
 	@BeforeClass
 	public void SetupExtents() {
 		
+		System.out.println("i am executing before test");
+		
 		extent = new ExtentReports();
 		htmlspark = new ExtentSparkReporter("extent.html");
 		extent.attachReporter(htmlspark);
