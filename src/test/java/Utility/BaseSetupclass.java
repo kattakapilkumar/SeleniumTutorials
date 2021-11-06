@@ -10,18 +10,19 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 public class BaseSetupclass {
 	
-	public static ExtentReports extent = new ExtentReports();
-	public static ExtentSparkReporter spark = new ExtentSparkReporter("extent.html");
+	public static ExtentReports extent;
+	public static ExtentSparkReporter htmlspark;  
 	
 	
 	
 	@BeforeSuite
 	@BeforeTest
 	public void SetupExtents() {
-		ExtentSparkReporter spark = new ExtentSparkReporter("Spark.html");
-		ExtentReports extent = new ExtentReports();
-		extent.attachReporter(spark);
-		ExtentTest test1= extent.createTest("google");
+		
+		extent = new ExtentReports();
+		htmlspark = new ExtentSparkReporter("extent.html");
+		extent.attachReporter(htmlspark);
+		// ExtentTest test1= extent.createTest("google");
 	}
 
 
