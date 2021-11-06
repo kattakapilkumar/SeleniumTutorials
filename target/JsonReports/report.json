@@ -1,0 +1,82 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-11-06T14:54:13.375Z",
+        "line": 12,
+        "name": "check login is successful with valid credentials",
+        "description": "",
+        "id": "test-login-functionality;check-login-is-successful-with-valid-credentials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 11983527000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "brower is open",
+            "match": {
+              "location": "StepDefinations.LoginDemoStepdefination2_PF.brower_is_open()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1508797400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is on login page",
+            "match": {
+              "location": "StepDefinations.LoginDemoStepdefination2_PF.user_is_on_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2541529300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters kapil and 12345",
+            "match": {
+              "arguments": [
+                {
+                  "val": "kapil",
+                  "offset": 12
+                },
+                {
+                  "val": "12345",
+                  "offset": 22
+                }
+              ],
+              "location": "StepDefinations.LoginDemoStepdefination2_PF.user_enters_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 818146000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user is navigated",
+            "match": {
+              "location": "StepDefinations.LoginDemoStepdefination2_PF.user_is_navigated()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Test login functionality",
+    "description": "",
+    "id": "test-login-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/Logindemo1.feature",
+    "tags": []
+  }
+]
