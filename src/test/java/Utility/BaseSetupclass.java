@@ -1,5 +1,8 @@
 package Utility;
 
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
@@ -12,9 +15,7 @@ public class BaseSetupclass {
 	
 	public static ExtentReports extent;
 	public static ExtentSparkReporter htmlspark;  
-	
-	
-	
+		
 	@BeforeSuite
 	@BeforeTest
 	public void SetupExtents() {
@@ -24,6 +25,18 @@ public class BaseSetupclass {
 		extent.attachReporter(htmlspark);
 		// ExtentTest test1= extent.createTest("google");
 	}
+	
+	@AfterSuite
+	@AfterTest
+	@AfterClass
+	public void tearDown() {
+		
+		
+	}
+	
+	
+	
+	
 
 
 	public static void main(String[] args) {
