@@ -3,7 +3,7 @@
 <suite thread-count="2" parallel="methods" name="Suite">
   <test thread-count="2" parallel="methods" name="Test">
     <classes>
-      <class name="StepDefinations.LoginDemoStepdefination2_testNG"/>
+      <class name="StepDefinations.LoginDemoStepdefination2_PF"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
