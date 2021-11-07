@@ -48,7 +48,8 @@ public class LoginDemoStepdefination2_PF extends BaseSetupclass {
 		System.out.println("i am here");
 	}
     
-	@Test
+	
+	@Test (priority=3)
 //	@Parameters({"username","password"})
 	@When("^user enters (.*) and (.*)$")
 	public void user_enters_username_and_password(String username,String password) throws InterruptedException {
@@ -67,7 +68,8 @@ public class LoginDemoStepdefination2_PF extends BaseSetupclass {
 		Thread.sleep(2000);
 
 	}
-
+    
+	
 	@Test (priority=4)
 	@Then("user is navigated")
 	public void user_is_navigated() {
