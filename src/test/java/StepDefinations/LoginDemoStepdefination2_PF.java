@@ -48,7 +48,7 @@ public class LoginDemoStepdefination2_PF extends BaseSetupclass {
 		System.out.println("i am here");
 	}
     
-	
+	@Test
 //	@Parameters({"username","password"})
 	@When("^user enters (.*) and (.*)$")
 	public void user_enters_username_and_password(String username,String password) throws InterruptedException {
