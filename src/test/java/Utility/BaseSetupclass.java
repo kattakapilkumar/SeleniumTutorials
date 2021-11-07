@@ -21,8 +21,8 @@ public class BaseSetupclass {
 		
 //	@Before
 //	@BeforeSuite
-//	@BeforeTest
-	@BeforeClass
+	@BeforeTest
+//	@BeforeClass
 	public void SetupExtents() {
 		
 		System.out.println("i am executing before test");

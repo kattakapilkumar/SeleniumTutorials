@@ -9,6 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 //import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 
 import Utility.BaseSetupclass;
 import io.cucumber.java.en.Given;
@@ -22,6 +23,7 @@ public class LoginDemoStepdefination2_PF extends BaseSetupclass {
 	
 	LoginPage_PF obj ;
 	
+	@Test
 	//@Test (priority=1)
 	@Given("brower is open")
 	public void brower_is_open() throws InterruptedException {
