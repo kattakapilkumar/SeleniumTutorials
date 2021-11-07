@@ -20,8 +20,8 @@ public class BaseSetupclass {
 	public static ExtentSparkReporter htmlspark;  
 		
 //	@Before
-	@BeforeSuite
-	@BeforeTest
+//	@BeforeSuite
+//	@BeforeTest
 	@BeforeClass
 	public void SetupExtents() {
 		

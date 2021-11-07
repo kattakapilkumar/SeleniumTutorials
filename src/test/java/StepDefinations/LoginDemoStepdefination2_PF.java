@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
+//import org.testng.annotations.Test;
 
 import Utility.BaseSetupclass;
 import io.cucumber.java.en.Given;
@@ -22,7 +22,7 @@ public class LoginDemoStepdefination2_PF extends BaseSetupclass {
 	
 	LoginPage_PF obj ;
 	
-	@Test (priority=1)
+	//@Test (priority=1)
 	@Given("brower is open")
 	public void brower_is_open() throws InterruptedException {
 		
@@ -40,7 +40,7 @@ public class LoginDemoStepdefination2_PF extends BaseSetupclass {
 	    Thread.sleep(2000);
 	}
 
-	@Test (priority=2)
+//	@Test (priority=2)
 	@Given("user is on login page")
 	public void user_is_on_login_page() {
 		
@@ -49,7 +49,7 @@ public class LoginDemoStepdefination2_PF extends BaseSetupclass {
 	}
     
 	
-	@Test (priority=3)
+	//@Test (priority=3)
 //	@Parameters({"username","password"})
 	@When("^user enters (.*) and (.*)$")
 	public void user_enters_username_and_password(String username,String password) throws InterruptedException {
@@ -70,7 +70,7 @@ public class LoginDemoStepdefination2_PF extends BaseSetupclass {
 	}
     
 	
-	@Test (priority=4)
+//	@Test (priority=4)
 	@Then("user is navigated")
 	public void user_is_navigated() {
 		
