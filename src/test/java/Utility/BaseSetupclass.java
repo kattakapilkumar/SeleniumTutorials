@@ -30,7 +30,7 @@ public class BaseSetupclass {
 		extent = new ExtentReports();
 		htmlspark = new ExtentSparkReporter("extent.html");
 		extent.attachReporter(htmlspark);
-		// ExtentTest test1= extent.createTest("google");
+		// ExtentTest test1= extent.createTest("google is opened");
 	}
 	
 	@AfterSuite
