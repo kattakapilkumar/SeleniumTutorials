@@ -1,8 +1,10 @@
 package StepDefinations;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
@@ -47,13 +49,14 @@ public class LoginDemoStepdefination2_PF extends BaseSetupclass {
 
 //	@Test (priority=2)
 	@Given("user is on login page")
-	public void user_is_on_login_page() {
+	public void user_is_on_login_page() throws IOException {
 		
 		driver.navigate().to("https://example.testproject.io/web/");
 		System.out.println("i am here");
 		
 		TakesScreenshot  scrshot = ((TakesScreenshot)driver);
 		File fobj = scrshot.getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(fobj,new File(".//screenshot/screen.png"));
 	}
     
 	
