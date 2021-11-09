@@ -56,7 +56,7 @@ public class LoginDemoStepdefination2_PF extends BaseSetupclass {
 		
 		TakesScreenshot  scrshot = ((TakesScreenshot)driver);
 		File fobj = scrshot.getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(fobj,new File(".//screenshot/screen.png"));
+		FileUtils.copyFile(fobj,new File(".//target/screen.png"));
 	}
     
 	
