@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="StepDefinations.LoginDemoStepdefination2_PFTest">
+      <class name="StepDefinations.TestRunner">
         <methods>
-          <include name="user_is_on_login_pageTest"/>
-          <include name="user_is_navigatedTest"/>
-          <include name="brower_is_openTest"/>
-          <include name="user_enters_username_and_passwordTest"/>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="0 1"/>
+          <include name="tearDownClass"/>
         </methods>
-      </class> <!-- StepDefinations.LoginDemoStepdefination2_PFTest -->
+      </class> <!-- StepDefinations.TestRunner -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

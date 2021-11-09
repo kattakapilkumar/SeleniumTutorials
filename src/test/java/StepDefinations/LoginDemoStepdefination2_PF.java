@@ -11,10 +11,13 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 //import org.testng.annotations.Test;
 import org.testng.annotations.Test;
+
+//import com.aventstack.extentreports.util.Assert;
 
 import Utility.BaseSetupclass;
 import io.cucumber.java.en.Given;
@@ -45,6 +48,9 @@ public class LoginDemoStepdefination2_PF extends BaseSetupclass {
 	
 	driver.manage().window().maximize();
 	    Thread.sleep(2000);
+	    
+	  test = extent.createTest("Test case -1 : opening the browser");
+	  Assert.assertTrue(1>0);
 	}
 
 //	@Test (priority=2)

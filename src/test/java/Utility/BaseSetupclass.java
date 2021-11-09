@@ -12,6 +12,7 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentReporter;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
+import io.cucumber.java.After;
 import io.cucumber.java.Before;
 
 public class BaseSetupclass {
@@ -22,7 +23,7 @@ public class BaseSetupclass {
 		
 //	@Before
 //	@BeforeSuite
-	@BeforeTest
+//	@BeforeTest
 //	@BeforeClass
 	public void SetupExtents() {
 		
@@ -34,9 +35,10 @@ public class BaseSetupclass {
 		// ExtentTest test1= extent.createTest("google is opened");
 	}
 	
-	@AfterSuite
-	@AfterTest
-	@AfterClass
+//	@After
+//	@AfterSuite
+//	@AfterTest
+//	@AfterClass
 	public void tearDown() {
 		
 		extent.flush();
