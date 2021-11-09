@@ -26,8 +26,8 @@ glue= {"StepDefinations"},
 monochrome=false,
 plugin = {"pretty","html:target/HtmlReports",
        "json:target/JsonReports/report.json",
-       "junit:target/JUnitReports/report.xml",
-        "com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html"
+       "junit:target/JUnitReports/report.xml"
+     //   "com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html"
           }
 	)
 
