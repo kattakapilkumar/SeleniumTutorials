@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="22.543">
-    <testcase classname="Test login functionality" name="check login is successful with valid credentials" time="11.589">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="28.565">
+    <testcase classname="Test login functionality" name="check login is successful with valid credentials" time="16.069">
         <system-out><![CDATA[Given brower is open........................................................passed
 And user is on login page...................................................passed
 When user enters kapil and 12345............................................passed
 Then user is navigated......................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Test login functionality" name="check login is successful with valid credentials 2" time="10.744">
+    <testcase classname="Test login functionality" name="check login is successful with valid credentials 2" time="12.151">
         <system-out><![CDATA[Given brower is open........................................................passed
 And user is on login page...................................................passed
 When user enters raghav and 12345...........................................passed

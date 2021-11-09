@@ -18,6 +18,7 @@ public class BaseSetupclass {
 	
 	public static ExtentReports extent;
 	public static ExtentSparkReporter htmlspark;  
+	public static ExtentTest test;
 		
 //	@Before
 //	@BeforeSuite
