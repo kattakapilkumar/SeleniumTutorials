@@ -51,6 +51,7 @@ public class LoginDemoStepdefination2_PF extends TestRunner {
 	    
 	  test = extent.createTest("Test case -1 : opening the browser");
 	  Assert.assertTrue(1>0);
+	  test.pass("test case is passed");
 	}
 
 //	@Test (priority=2)
