@@ -25,7 +25,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pagefactory.LoginPage_PF;
 
-public class LoginDemoStepdefination2_PF extends BaseSetupclass {
+public class LoginDemoStepdefination2_PF extends TestRunner {
 	
 	WebDriver driver = null;
 	
