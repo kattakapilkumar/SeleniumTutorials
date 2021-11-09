@@ -17,6 +17,8 @@ import org.testng.annotations.Parameters;
 //import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.MediaEntityBuilder;
+
 //import com.aventstack.extentreports.util.Assert;
 
 import Utility.BaseSetupclass;
@@ -64,6 +66,8 @@ public class LoginDemoStepdefination2_PF extends TestRunner {
 		TakesScreenshot  scrshot = ((TakesScreenshot)driver);
 		File fobj = scrshot.getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(fobj,new File(".//target/screen.png"));
+		test.pass("test case is passed ", MediaEntityBuilder.createScreenCaptureFromPath("//target.screen,png").build());
+				
 	}
     
 	
