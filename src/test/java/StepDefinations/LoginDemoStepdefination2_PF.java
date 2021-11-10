@@ -49,7 +49,7 @@ public class LoginDemoStepdefination2_PF extends TestRunner {
 	driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 	
 	driver.manage().window().maximize();
-	    Thread.sleep(2000);
+	Thread.sleep(2000);
 	    
 	  test = extent.createTest("Test case -1 : opening the browser");
 	  Assert.assertTrue(1>0);
