@@ -33,7 +33,7 @@ public class LoginDemoStepdefination2_PF extends TestRunner {
 	
 	LoginPage_PF obj ;
 	
-	@Test
+	//@Test
 	//@Test (priority=1)
 	@Given("brower is open")
 	public void brower_is_open() throws InterruptedException {
@@ -66,7 +66,7 @@ public class LoginDemoStepdefination2_PF extends TestRunner {
 		TakesScreenshot  scrshot = ((TakesScreenshot)driver);
 		File fobj = scrshot.getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(fobj,new File(".//target/screen.png"));
-		test.pass("test case is passed ", MediaEntityBuilder.createScreenCaptureFromPath("//target.screen,png").build());
+		test.pass("test case is passed ", MediaEntityBuilder.createScreenCaptureFromPath(".//target/screen,png").build());
 				
 	}
     
