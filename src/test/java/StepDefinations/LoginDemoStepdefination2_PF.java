@@ -31,7 +31,7 @@ public class LoginDemoStepdefination2_PF extends TestRunner {
 	
 	WebDriver driver = null;
 	
-	LoginPage_PF obj ;
+	LoginPage_PF obj = null ;
 	
 	//@Test
 	//@Test (priority=1)
@@ -50,7 +50,8 @@ public class LoginDemoStepdefination2_PF extends TestRunner {
 	
 	driver.manage().window().maximize();
 	Thread.sleep(2000);
-	    
+	driver.navigate().refresh();
+	Thread.sleep(2000);
 	  test = extent.createTest("Test case -1 : opening the browser");
 	  Assert.assertTrue(1>0);
 	  test.pass("test case is passed");
